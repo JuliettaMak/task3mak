@@ -126,7 +126,7 @@ int input_str_check(char *str1, FILE* filename)
 		char symb_curr = *(str1+ii);
 		if (!(symb_curr == '0' || symb_curr == '1' || symb_curr == '2'))
 		{
-			fprintf(filename, "FAILURE: the terminal %c doesn't belong to the grammar", symb_curr);
+			fprintf(filename, "FAILURE: the terminal %c doesn't belong to the grammar. \n", symb_curr);
 			res = -1;
 		}
 	}

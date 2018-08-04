@@ -1,0 +1,35 @@
+Sat Aug  4 13:42:42 2018
+
+Input string: 02 
+----------TABLE----------
+step	 current_string
+0	 02F
+1 	 B2F		 Rule B: 0 has been reduced to B 
+2 	 SF		 Rule S: B2 has been reduced to S 
+SUCCESS  	 SF
+Sat Aug  4 13:43:02 2018
+
+Input string: 12 
+----------TABLE----------
+step	 current_string
+0	 12F
+1 	 B2F		 Rule B: 1 has been reduced to B 
+2 	 SF		 Rule S: B2 has been reduced to S 
+SUCCESS  	 SF
+Sat Aug  4 13:44:41 2018
+
+Input string: 10 
+----------TABLE----------
+step	 current_string
+0	 10F
+1 	 B0F		 Rule B: 1 has been reduced to B 
+2 	 BBF		 Rule B: 0 has been reduced to B 
+FAILURE: the string doesn't fit the grammar. 	 BBF
+Sat Aug  4 13:44:50 2018
+
+Input string: 31 
+FAILURE: the terminal 3 doesn't belong to the grammar. 
+Sat Aug  4 13:44:56 2018
+
+Input string: 1221 
+FAILURE: the string 1221 doesn't fit the grammar. 	 A string should contain 2 symbols. 
